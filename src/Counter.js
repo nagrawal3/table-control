@@ -13,13 +13,16 @@ class Counter extends React.Component {
  
   render() {
     return (
-      <button
-        onClick={() => {
-          this.setState({ count: this.state.count + 1 });
-        }}
-      >
-        Count: {this.state.count}
-      </button>
+      <div>
+        <div className='nameClass'> Hello {this.props.name}</div>
+        <button
+          onClick={() => {
+            this.setState({ count: this.state.count + 1 });
+          }}
+        >
+          Count: {this.state.count}
+        </button>
+      </div>
     );
   }
 }
