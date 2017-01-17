@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         date: '01/10/2016'
   		},
   		{
-  			name: 'Abhishekar Mec',
+  			name: 'Abhishekar Mechineni',
   			age: '26',
   			sex: 'Male',
         type: 'inpatient',

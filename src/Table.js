@@ -41,13 +41,14 @@ function TableHeader(data) {
 	var headerStyle = {
 		margin: 10,
 		display: "inline-block",
-		backgroundColor: "#ffde00"
+		backgroundColor: "#ffde00",
+		width: 120
 	}
 	var headerName= data.data
-	if(headerName.length < 20)
-			headerName = new Array(20 - headerName.length + 1).join('.') + headerName
-		else
-			headerName = headerName.substring(0,20)
+	// if(headerName.length < 20)
+	// 		headerName = new Array(20 - headerName.length + 1).join('.') + headerName
+	// 	else
+	// 		headerName = headerName.substring(0,20)
 	return (
 		<div className = 'table-TableControl--tableRow-data' style = {headerStyle}>
 			<span> {headerName} </span>
