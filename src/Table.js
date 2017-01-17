@@ -38,6 +38,12 @@ class Table extends React.Component {
 export default Table;
 
 function TableHeader(data) {
+	// Click event on the header
+	function handleClick(e) {
+		e.preventDefault();
+    	console.log('The header was clicked.');
+	}
+
 	var headerStyle = {
 		margin: 10,
 		display: "inline-block",
@@ -50,7 +56,7 @@ function TableHeader(data) {
 	// 	else
 	// 		headerName = headerName.substring(0,20)
 	return (
-		<div className = 'table-TableControl--tableRow-data' style = {headerStyle}>
+		<div className = 'table-TableControl--tableRow-data' style = {headerStyle} onClick={handleClick}>
 			<span> {headerName} </span>
 		</div>
 	);
