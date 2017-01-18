@@ -11,11 +11,7 @@ class Cell extends React.Component {
 			display: "inline-block",
 			width: 120
 		};
-		var data = this.props.data
-		// if(data.length < 20)
-		// 	data = new Array(20 - data.length + 1).join('.') + data
-		// else
-		// 	data = data.substring(0,20)
+		var data = this.props.data;
 		return (
 			<div className='table-TableControl-cellData' style= {cellStyle}>
 				<span> {data} </span>
